@@ -9,7 +9,6 @@ router.get("/api/notes", function (req, res) {
   });
 });
 
-//what is newNote?
 router.post("/api/notes", function (req, res) {
   fs.readFile(path.join);
   fs.writeFile(
@@ -23,11 +22,11 @@ router.post("/api/notes", function (req, res) {
     }
   );
 
-  router.delete("/api/notes/:id", function (req, res) {
-    var deleteNote = "id" + req.params.id;
-    console.log(deleteNote);
-    deleteNote.push(deleteNote);
-    res.json(deleteNote);
-  });
+router.delete("/api/notes/:id", function (req, res) {
+  var deleteNote = "id" + req.params.id;
+  console.log(deleteNote);
+  deleteNote.push(deleteNote);
+  res.json(deleteNote);
 });
+
 module.exports = router;
