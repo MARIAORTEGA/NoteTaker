@@ -21,6 +21,7 @@ router.post("/api/notes", function (req, res) {
       res.json(newNote);
     }
   );
+});
 
 router.delete("/api/notes/:id", function (req, res) {
   var deleteNote = "id" + req.params.id;
